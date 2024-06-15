@@ -3,7 +3,9 @@
 # During the process, it should get stuck at the last step where it creates a new tunnel on ngrok.
 
 name: Windows
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
